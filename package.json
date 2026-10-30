@@ -1,0 +1,29 @@
+{
+  "name": "plaincode",
+  "version": "1.0.0",
+  "description": "Turn messy or over-engineered code into simple, readable code with plain-English notes.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/generator": "^7.29.12",
+    "@babel/parser": "^7.29.12",
+    "@babel/traverse": "^7.29.12",
+    "@babel/types": "^7.29.11",
+    "acorn": "^8.19.0",
+    "express": "^4.22.3",
+    "prettier": "^3.9.10"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
